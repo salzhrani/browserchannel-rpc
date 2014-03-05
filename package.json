@@ -1,0 +1,22 @@
+{
+  "name": "browserchannel-rpc",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/salzhrani/browserchannel-rpc.git"
+  },
+  "author": "Samy Alzhrani",
+  "license": "MIT",
+  "dependencies": {
+    "browserchannel": "~1.1.1",
+    "rsvp": "~3.0.6"
+  },
+  "devDependencies": {
+    "connect": "~2.13.0"
+  }
+}

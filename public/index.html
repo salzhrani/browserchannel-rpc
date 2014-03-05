@@ -1,0 +1,22 @@
+<!doctype html>
+<body>
+	<script src="/channel/bcsocket.js"></script>
+	<script src="rsvp-latest.js"></script>
+	<script src="client.js"></script>
+	<script>
+		var rpc = new BCRPC('/channel', {reconnect: true});
+		rpc.emit('greet','User')
+		.then(function(data){
+			alert('User '+data);
+		},function(err){
+			alert(err);
+		});
+		rpc.emit('greet','Me')
+		.then(function(data){
+			alert('Me '+data);
+		},function(err){
+			alert(err);
+		});
+	</script>
+</body>
+</html>
